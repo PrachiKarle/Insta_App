@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Instagram</title>
+    <%-include('cdn_link.ejs')%>
+</head>
+<body>
+    <div class="container-fluid p-2">
+        <div class="text-center m-auto mt-2 py-3 px-4" style="border:1px solid #b1b1b1;width: 28%;">
+
+            <img src="/logo.png" class="my-3" alt="">
+            
+            <form action="/saveuser" method="post" class="p-3">
+
+                 <input type="text" placeholder="Mobile Number or Email" class="form-control my-3" name="user_email">
+
+                 <input type="password" placeholder="Password" class="form-control my-3" name="user_pass">
+
+                 <input type="text" placeholder="Full Name" class="form-control my-3" name="user_fullnm">
+
+                 <input type="text" placeholder="Username" class="form-control my-3" name="user_name">
+
+                 <button class="form-control btn text-light my-3" style="background-color: #4CB5F9;">Sign up</button>
+
+            </form>
+
+            <b class="fw-normal ">Have an account? </b> <a href="/" class="text-decoration-none fw-bold">Log in</a>
+        </div> 
+    </div>
+</body>
+</html>

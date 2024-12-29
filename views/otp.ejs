@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%-include('cdn_link.ejs')%>
+  </head>
+
+  <body>
+
+    
+    <div class="container-fluid text-center">
+      <div
+        class="text-center m-auto mt-5 py-3 px-4"
+        style="border: 1px solid #b1b1b1; width: 28%"
+      >
+        <img src="/logo.png" class="my-3" alt="" />
+
+        <form action="/verify_otp" method="post" class="p-4">
+          <input
+            type="text"
+            name="otp"
+            placeholder="Enter OTP"
+            class="form-control"
+          />
+          <button
+            class="btn text-light fw-bold mt-3"
+            style="background-color: #4cb5f9"
+          >
+            Verify OTP
+          </button>
+
+        </form>
+        <a href="/resendotp" class="px-3 py-2 text-info text-decoration-none">Resend OTP</a>
+      </div>
+    </div>
+
+
+  </body>
+</html>
