@@ -5,8 +5,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // true for port 465, false for other ports
   auth: {
-    user: "email@gmail.com", //email
-    pass: "pass", //app password
+    user: "prachikarle03@gmail.com", //email
+    pass: "ches cnxm rfho kijh", //app password
   },
 });
 
@@ -16,7 +16,7 @@ const sendOTP=async (email,otp,name)=> {
   // send mail with defined transport object
 
   const info = await transporter.sendMail({
-    from: "email", // sender address
+    from: "prachikarle03@gmail.com", // sender address
     to: email, // list of receivers
 
     subject: "OTP Verification", // Subject line
