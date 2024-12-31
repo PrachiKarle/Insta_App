@@ -111,15 +111,15 @@ app.post('/verify_otp',(req,res)=>{
 
 //profile page
 app.get('/profile',async(req,res)=>{
-    if(req.session.insta_id){
+    // if(req.session.insta_id){
         var sql=`select* from instagram where insta_id='${req.session.insta_id}'`;
         var data=await exe(sql);
         const obj={data:data[0]};
         res.render('profile.ejs',obj);
-    }
-    else{
-        res.redirect('/');
-    }
+    // }
+    // else{
+    //     res.redirect('/');
+    // }
 })
 
 
